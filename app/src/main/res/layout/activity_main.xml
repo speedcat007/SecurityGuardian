@@ -12,11 +12,19 @@
     >
 
     <cn.edu.njust.securityguardian.ui.ImageItemView
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        autoNS:imageSrc="@drawable/btn2"
+        autoNS:itemtext="@string/app_name"
+        />
+    <cn.edu.njust.securityguardian.ui.ImageItemView
+        android:id="@+id/iternet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         autoNS:imageSrc="@drawable/btn4"
         autoNS:itemtext="@string/app_name"
-        android:layout_marginTop="0dp"
-        android:layout_marginLeft="0dp"
+        android:layout_alignParentRight="true"
+
         />
 </RelativeLayout>
