@@ -1,6 +1,7 @@
 # SecurityGuardian
 
 安全卫士
+本项目通过android studio 1.0版本构建，若用eclipse 请自行导入调试
 
 ###git教程
 
