@@ -2,9 +2,8 @@
 <resources>
 
     <string name="app_name">Security Guardian</string>
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_text_1">隐私保护</string>
 
 
 </resources>
