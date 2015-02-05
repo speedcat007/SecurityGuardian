@@ -2,5 +2,9 @@
 <resources>
     <color name="nonColor">#00000000</color>
     <color name="titlebackground">#b2ffdc</color>
-    <color name="textcolor">#000</color>
+    <color name="titletext">#000</color>
+    <color name="background">#000</color>
+    <color name="contenttext">#ffffff</color>
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
 </resources>

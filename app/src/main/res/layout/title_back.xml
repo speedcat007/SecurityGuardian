@@ -6,19 +6,19 @@
     <Button
         android:layout_width="70dp"
         android:layout_height="40dp"
-        android:id="@+id/button_back_1"
+        android:id="@+id/btn_back"
         android:layout_centerVertical="true"
         android:layout_marginLeft="5dp"
         android:text="Back"
-        android:textColor="@color/textcolor"
+        android:textColor="@color/titletext"
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/title_text"
+        android:id="@+id/tv_title_text"
         android:layout_centerInParent="true"
         android:text="@string/title_text_1"
-        android:textColor="@color/textcolor"
+        android:textColor="@color/titletext"
         android:textSize="20sp"
         />
 </RelativeLayout>

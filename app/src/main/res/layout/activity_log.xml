@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:autoNS="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <cn.edu.njust.securityguardian.ui.TitleBackView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        autoNS:titleText="@string/log"
+        />
+
+    <ListView
+        android:id="@+id/lv_log_file_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="false"
+        android:scrollbars="vertical"
+
+        />
+</LinearLayout>

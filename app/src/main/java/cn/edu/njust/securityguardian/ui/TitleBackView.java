@@ -22,8 +22,8 @@ public class TitleBackView extends FrameLayout {
     public TitleBackView(Context context, AttributeSet attrs) {
         super(context, attrs);
         LayoutInflater.from(context).inflate(R.layout.title_back, this);
-        titleText = (TextView) findViewById(R.id.title_text);
-        backButton = (Button) findViewById(R.id.button_back_1);
+        titleText = (TextView) findViewById(R.id.tv_title_text);
+        backButton = (Button) findViewById(R.id.btn_back);
         backButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
