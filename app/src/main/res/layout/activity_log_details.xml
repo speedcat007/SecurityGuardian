@@ -23,7 +23,7 @@
             android:textSize="@dimen/text_size"
             />
         <TextView
-            android:id="@+id/tv_date"
+            android:id="@+id/tv_log_date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="2014-07-12"
@@ -44,7 +44,7 @@
             android:textSize="@dimen/text_size"
             />
         <TextView
-            android:id="@+id/tv_time"
+            android:id="@+id/tv_log_time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="18:36:12"
@@ -65,7 +65,7 @@
             android:textSize="@dimen/text_size"
             />
         <TextView
-            android:id="@+id/tv_way"
+            android:id="@+id/tv_log_way"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="关闭wifi"
@@ -86,7 +86,7 @@
             android:textSize="@dimen/text_size"
             />
         <TextView
-            android:id="@+id/tv_app"
+            android:id="@+id/tv_log_app"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="微信"
@@ -107,7 +107,7 @@
             android:textSize="@dimen/text_size"
             />
         <TextView
-            android:id="@+id/tv_app_ip"
+            android:id="@+id/tv_log_app_ip"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="192.10.12.12"
@@ -128,7 +128,7 @@
             android:textSize="@dimen/text_size"
             />
         <TextView
-            android:id="@+id/tv_package_size_controller"
+            android:id="@+id/tv_log_package_size_controller"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="1231b"
@@ -149,7 +149,7 @@
             android:textSize="@dimen/text_size"
             />
         <TextView
-            android:id="@+id/tv_package_size"
+            android:id="@+id/tv_log_package_size"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="685b"

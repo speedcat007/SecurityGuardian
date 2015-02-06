@@ -4,4 +4,5 @@
     <dimen name="main_vertical_margin">125dp</dimen>
     <dimen name="text_padding">10dp</dimen>
     <dimen name="text_size">20sp</dimen>
+    <dimen name="image_item_margin_horizontal">40dp</dimen>
 </resources>

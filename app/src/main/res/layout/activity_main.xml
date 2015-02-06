@@ -10,21 +10,27 @@
                 android:background="@drawable/background"
                 tools:context=".MainActivity"
     >
-
-    <cn.edu.njust.securityguardian.ui.ImageItemView
-        android:id="@+id/search"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        autoNS:imageSrc="@drawable/btn2"
-        autoNS:itemtext="@string/app_name"
-        />
-    <cn.edu.njust.securityguardian.ui.ImageItemView
-        android:id="@+id/iternet"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        autoNS:imageSrc="@drawable/btn4"
-        autoNS:itemtext="@string/app_name"
-        android:layout_alignParentRight="true"
+        android:paddingLeft="@dimen/image_item_margin_horizontal"
+        android:paddingRight="@dimen/image_item_margin_horizontal"
+        >
+        <cn.edu.njust.securityguardian.ui.ImageItemView
+            android:id="@+id/iiv_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            autoNS:imageSrc="@drawable/btn2"
+            autoNS:itemtext="@string/log"
+            />
+        <cn.edu.njust.securityguardian.ui.ImageItemView
+            android:id="@+id/iiv_privacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            autoNS:imageSrc="@drawable/btn4"
+            autoNS:itemtext="@string/privacy"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
 
-        />
 </RelativeLayout>
