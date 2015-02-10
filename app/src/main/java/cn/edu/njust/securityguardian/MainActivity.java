@@ -9,12 +9,14 @@ import android.view.View;
 import android.view.View.OnClickListener;
 
 import cn.edu.njust.securityguardian.log.LogActivity;
+import cn.edu.njust.securityguardian.privacy.PrivacyActivity;
 import cn.edu.njust.securityguardian.ui.ImageItemView;
 
 
 public class MainActivity extends Activity {
 
     private ImageItemView iiv_log;
+    private ImageItemView iiv_privacy;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +28,14 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(MainActivity.this, LogActivity.class);
+                startActivity(intent);
+            }
+        });
+        iiv_privacy=(ImageItemView) findViewById(R.id.iiv_privacy);
+        iiv_privacy.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this, PrivacyActivity.class);
                 startActivity(intent);
             }
         });

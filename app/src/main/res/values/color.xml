@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="nonColor">#00000000</color>
-    <color name="titlebackground">#b2ffdc</color>
-    <color name="titletext">#000</color>
-    <color name="background">#000</color>
-    <color name="contenttext">#ffffff</color>
     <color name="black">#000</color>
     <color name="white">#fff</color>
+    <color name="Lavender">#E6E6FA</color>
+    <color name="DarkGray">#A9A9A9</color>
+    <color name="Gray">#808080</color>
+    <color name="LightSlateGray">#778899</color>
+    <color name="LightSkyBlue">#87CEFA</color>
+    <color name="Plum">#DDA0DD</color>
+    <color name="DarkViolet">#9400D3</color>
+    <color name="MediumSlateBlue">#7B68EE</color>
+    <color name="DarkSlateGray">#2F4F4F</color>
+    <color name="SpringGreen">#00FF7F</color>
+    <color name="SeaGreen">#2E8B57</color>
+    <color name="LawnGreen">#7CFC00</color>
+    <color name="Green">#6DC066</color>
+    <color name="SaddleBrown">#8B4513</color>
+    <color name="Sienna">#A0522D</color>
+    <color name="OrangeRed">#FF4500</color>
+    <color name="Brown">#A52A2A</color>
 </resources>

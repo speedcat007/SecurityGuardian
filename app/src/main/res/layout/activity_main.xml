@@ -9,6 +9,7 @@
                 android:paddingBottom="@dimen/main_vertical_margin"
                 android:background="@drawable/background"
                 tools:context=".MainActivity"
+                android:theme="@android:style/Theme.NoTitleBar"
     >
     <RelativeLayout
         android:layout_width="match_parent"

@@ -33,7 +33,7 @@ public class LogDbOpenHelper extends SQLiteOpenHelper{
     public static final String INFO_PACKAGE_SIZE="package_size";
 
     /*创建表的SQL语句*/
-    private static final String CREATETABLE ="CREATE TABLE "+TABLE_NAME+" ("
+    private static final String CREATE_TABLE ="CREATE TABLE "+TABLE_NAME+" ("
             +INFO_ID+" INTEGER PRIMARY KEY AUTOINCREMENT,"
             +INFO_FILE_NAME+" TEXT NOT NULL,"
             +INFO_DATE+" TEXT,"
@@ -54,7 +54,7 @@ public class LogDbOpenHelper extends SQLiteOpenHelper{
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(CREATETABLE);
+        db.execSQL(CREATE_TABLE);
     }
 
     @Override

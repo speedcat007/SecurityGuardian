@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:background="@color/titlebackground">
+                android:background="@color/Green">
     <Button
         android:layout_width="70dp"
         android:layout_height="40dp"
@@ -10,7 +10,7 @@
         android:layout_centerVertical="true"
         android:layout_marginLeft="5dp"
         android:text="Back"
-        android:textColor="@color/titletext"
+        android:background="@color/SeaGreen"
         />
     <TextView
         android:layout_width="wrap_content"
@@ -18,7 +18,6 @@
         android:id="@+id/tv_title_text"
         android:layout_centerInParent="true"
         android:text="@string/app_name"
-        android:textColor="@color/titletext"
         android:textSize="20sp"
         />
 </RelativeLayout>
