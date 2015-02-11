@@ -6,19 +6,24 @@ import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.AccelerateInterpolator;
+import android.view.animation.Animation;
+import android.view.animation.Animation.AnimationListener;
+import android.view.animation.DecelerateInterpolator;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.SimpleAdapter;
 import android.widget.SimpleAdapter.ViewBinder;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
 import cn.edu.njust.securityguardian.R;
+import cn.edu.njust.securityguardian.ui.CheckableRelativeLayout;
+import cn.edu.njust.securityguardian.ui.Rotate3dAnimation;
 
 /**
  * Created by fookey on 15-2-7.
@@ -27,8 +32,7 @@ import cn.edu.njust.securityguardian.R;
 public class PrivacyActivity extends Activity {
 
     private GridView gv_app_lock;
-    private ImageView iv_app_icon;
-    private TextView tv_app_name;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,10 +69,51 @@ public class PrivacyActivity extends Activity {
         gv_app_lock.setAdapter(gridViewAdapter);
         gv_app_lock.setOnItemClickListener(new OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public void onItemClick(AdapterView<?> parent, final View view, int position, long id) {
+                CheckableRelativeLayout v=(CheckableRelativeLayout)view;
+                ImageView imageView=(ImageView)view.findViewById(R.id.iv_app_icon);
+                final float centerX=imageView.getWidth()/2f;
+                final float centerY=imageView.getHeight()/2f;
+                Rotate3dAnimation rotation;
+                if(v.isChecked()){
+                    rotation=new Rotate3dAnimation(0,90,centerX,centerY,0,false);
+                }else {
+                    rotation=new Rotate3dAnimation(360,270,centerX,centerY,0,false);
+                }
+                rotation.setDuration(200);
+                rotation.setFillAfter(true);
+                rotation.setInterpolator(new AccelerateInterpolator());
+                rotation.setAnimationListener(new AnimationListener() {
+                    @Override
+                    public void onAnimationStart(Animation animation) {
 
+                    }
+
+                    @Override
+                    public void onAnimationEnd(Animation animation) {
+                        ImageView imageView=(ImageView)view.findViewById(R.id.iv_app_icon);
+                        Rotate3dAnimation rotation;
+                        if(((CheckableRelativeLayout)view).isChecked()){
+                            rotation=new Rotate3dAnimation(270,360,centerX,centerY,0,false);
+                        }else {
+                            rotation=new Rotate3dAnimation(90,0,centerX,centerY,0,false);
+                        }
+                        rotation.setDuration(200);
+                        rotation.setFillAfter(true);
+                        rotation.setInterpolator(new DecelerateInterpolator());
+                        imageView.startAnimation(rotation);
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animation animation) {
+
+                    }
+                });
+                imageView.startAnimation(rotation);
             }
         });
+
+
 
 
     }

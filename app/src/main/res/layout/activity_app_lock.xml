@@ -20,6 +20,9 @@
         android:verticalSpacing="10dip"
         android:stretchMode="columnWidth"
         android:gravity="center"
-
+        android:clickable="true"
+        android:smoothScrollbar="true"
+        android:scrollingCache="true"
+        android:choiceMode="multipleChoice"
         />
 </LinearLayout>
