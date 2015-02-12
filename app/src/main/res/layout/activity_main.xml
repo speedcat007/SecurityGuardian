@@ -3,35 +3,136 @@
                 xmlns:autoNS="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingLeft="@dimen/main_horizontal_margin"
-                android:paddingRight="@dimen/main_horizontal_margin"
-                android:paddingTop="@dimen/main_vertical_margin"
-                android:paddingBottom="@dimen/main_vertical_margin"
-                android:background="@drawable/background"
                 tools:context=".MainActivity"
-                android:theme="@android:style/Theme.NoTitleBar"
     >
     <RelativeLayout
+        android:id="@+id/rl_score_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingLeft="@dimen/image_item_margin_horizontal"
-        android:paddingRight="@dimen/image_item_margin_horizontal"
+        android:layout_height="300dp"
+        android:background="@color/MediumSlateBlue"
         >
-        <cn.edu.njust.securityguardian.ui.ImageItemView
-            android:id="@+id/iiv_log"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            autoNS:imageSrc="@drawable/btn2"
-            autoNS:itemtext="@string/log"
+            android:orientation="horizontal"
+            android:padding="@dimen/text_padding"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/btn2"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Securian Guardian"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size"
+                />
+            </LinearLayout>
+        </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/rl_score_view"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/DarkGray"
             />
-        <cn.edu.njust.securityguardian.ui.ImageItemView
-            android:id="@+id/iiv_privacy"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            autoNS:imageSrc="@drawable/btn4"
-            autoNS:itemtext="@string/privacy"
-            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:id="@+id/ll_app_lock"
+            android:padding="@dimen/text_padding"
+            android:clickable="true"
+            android:background="@drawable/item_app_background"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+               android:layout_marginLeft="15dp"
+                android:src="@drawable/btn4"
+                android:layout_gravity="center_vertical"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:text="应用锁"
+                android:textSize="@dimen/text_size"
+                />
+            </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/DarkGray"
             />
-    </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/ll_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/text_padding"
+            android:clickable="true"
+            android:background="@drawable/item_app_background"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/btn2"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center_vertical"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:text="日志查看"
+                android:textSize="@dimen/text_size"
+                />
+            </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/DarkGray"
+            />
+        <LinearLayout
+            android:id="@+id/ll_file_crypt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/text_padding"
+            android:clickable="true"
+            android:background="@drawable/item_app_background"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/btn4"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center_vertical"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:text="日志查看"
+                android:textSize="@dimen/text_size"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/DarkGray"
+            />
+    </LinearLayout>
 
 </RelativeLayout>

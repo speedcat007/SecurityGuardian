@@ -4,7 +4,6 @@
     android:layout_height="fill_parent"
     android:layout_width="fill_parent"
     android:background="@drawable/item_app_background"
-
     >
 
     <ImageView
@@ -12,9 +11,9 @@
         android:layout_width="@dimen/item_app_icon_size"
         android:layout_height="@dimen/item_app_icon_size"
         android:layout_centerHorizontal="true"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:paddingTop="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
         android:duplicateParentState="true"
         android:src="@drawable/btn2"
         />

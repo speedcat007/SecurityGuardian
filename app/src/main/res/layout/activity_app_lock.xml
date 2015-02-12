@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:app="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
     >
     <cn.edu.njust.securityguardian.ui.TitleBackView
+        android:id="@+id/tbv_app_lock"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         app:titleText="应用锁"
@@ -15,6 +16,7 @@
         android:id="@+id/gv_app_lock"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
+        android:layout_below="@id/tbv_app_lock"
         android:numColumns="3"
         android:horizontalSpacing="10dip"
         android:verticalSpacing="10dip"
@@ -24,5 +26,15 @@
         android:smoothScrollbar="true"
         android:scrollingCache="true"
         android:choiceMode="multipleChoice"
+        android:listSelector="@drawable/item_app_background"
         />
-</LinearLayout>
+    <Button
+        android:id="@+id/btn_open_app_lock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:text="开启应用锁"
+        android:background="@color/LightSkyBlue"
+        />
+</RelativeLayout>
