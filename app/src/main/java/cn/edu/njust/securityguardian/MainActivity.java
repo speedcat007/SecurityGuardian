@@ -9,38 +9,26 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.LinearLayout;
 
-import cn.edu.njust.securityguardian.log.LogActivity;
-import cn.edu.njust.securityguardian.privacy.PrivacyActivity;
+import cn.edu.njust.securityguardian.privacyprotection.PrivacyProtectionActivity;
 
 
 public class MainActivity extends Activity {
 
-    private LinearLayout ll_app_lock;
-    private LinearLayout ll_log;
+    private LinearLayout ll_privacy_protection;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ll_log = (LinearLayout)findViewById(R.id.ll_log);
-        ll_log.setOnClickListener(new OnClickListener() {
+        ll_privacy_protection=(LinearLayout)findViewById(R.id.ll_privacy_protection);
+        ll_privacy_protection.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this, LogActivity.class);
+                Intent intent=new Intent(MainActivity.this, PrivacyProtectionActivity.class);
                 startActivity(intent);
             }
         });
-
-        ll_app_lock=(LinearLayout) findViewById(R.id.ll_app_lock);
-        ll_app_lock.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this, PrivacyActivity.class);
-                startActivity(intent);
-            }
-        });
-
 
     }
 

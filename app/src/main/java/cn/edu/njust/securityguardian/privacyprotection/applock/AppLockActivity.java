@@ -1,4 +1,4 @@
-package cn.edu.njust.securityguardian.privacy;
+package cn.edu.njust.securityguardian.privacyprotection.applock;
 
 import android.app.Activity;
 import android.content.pm.ApplicationInfo;
@@ -29,11 +29,9 @@ import cn.edu.njust.securityguardian.ui.CheckableRelativeLayout;
 import cn.edu.njust.securityguardian.ui.Rotate3dAnimation;
 
 /**
- * Created by fookey on 15-2-7.
- *
+ * Created by fookey on 15-2-13.
  */
-public class PrivacyActivity extends Activity {
-
+public class AppLockActivity extends Activity {
     private GridView gv_app_lock;
     private Button btn_open_app_lock;
     private boolean islocked=false;
@@ -157,5 +155,4 @@ public class PrivacyActivity extends Activity {
             }
         };
     }
-
 }

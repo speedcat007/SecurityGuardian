@@ -1,4 +1,4 @@
-package cn.edu.njust.securityguardian.privacy;
+package cn.edu.njust.securityguardian.privacyprotection;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;

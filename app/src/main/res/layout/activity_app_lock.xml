@@ -26,7 +26,7 @@
         android:smoothScrollbar="true"
         android:scrollingCache="true"
         android:choiceMode="multipleChoice"
-        android:listSelector="@drawable/item_app_background"
+        android:listSelector="@drawable/background_selector_with_corners"
         />
     <Button
         android:id="@+id/btn_open_app_lock"

@@ -1,4 +1,4 @@
-package cn.edu.njust.securityguardian.privacy;
+package cn.edu.njust.securityguardian.privacyprotection.applock;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -16,10 +16,10 @@ import java.util.List;
  * Created by fookey on 15-2-7.
  *
  */
-public class PrivacyDbOpenHelper extends SQLiteOpenHelper {
+public class AppLockDbOpenHelper extends SQLiteOpenHelper {
 
     public static String DATABASE_NAME="securityguardian.db";
-    public static final String TABLE_NAME  ="privacy";
+    public static final String TABLE_NAME  ="applock";
     public static int DATABASE_VERSION=1;
 
     /*表中的字段*/
@@ -34,7 +34,7 @@ public class PrivacyDbOpenHelper extends SQLiteOpenHelper {
             +")";
     private Context context;
 
-    public PrivacyDbOpenHelper(Context context, String name, CursorFactory factory, int version) {
+    public AppLockDbOpenHelper(Context context, String name, CursorFactory factory, int version) {
         super(context, name, factory, version);
         DATABASE_NAME= name;
         DATABASE_VERSION=version;

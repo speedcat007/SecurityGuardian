@@ -10,7 +10,7 @@
         android:id="@+id/image_item_imagebutton"
         android:src="@drawable/btn2"
         android:layout_gravity="center_horizontal"
-        android:background="@color/nonColor"
+        android:background="@color/transparent"
         />
     <TextView
         android:layout_width="wrap_content"

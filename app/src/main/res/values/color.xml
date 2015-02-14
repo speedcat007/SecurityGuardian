@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="nonColor">#00000000</color>
+    <color name="transparent">#00000000</color>
     <color name="black">#000</color>
     <color name="white">#fff</color>
     <color name="Lavender">#E6E6FA</color>
@@ -11,6 +11,7 @@
     <color name="Plum">#DDA0DD</color>
     <color name="DarkViolet">#9400D3</color>
     <color name="MediumSlateBlue">#7B68EE</color>
+    <color name="LightBlue">#ffa17acd</color>
     <color name="DarkSlateGray">#2F4F4F</color>
     <color name="SpringGreen">#00FF7F</color>
     <color name="SeaGreen">#2E8B57</color>
