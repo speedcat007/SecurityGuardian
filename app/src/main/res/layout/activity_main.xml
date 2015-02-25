@@ -19,8 +19,8 @@
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/btn2"
-                />
+                android:src="@drawable/icon_launcher"
+                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -74,9 +74,9 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_marginLeft="15dp"
-                    android:src="@drawable/btn4"
+                    android:src="@drawable/icon_acc_system"
                     android:layout_gravity="center_vertical"
-                    />
+                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -101,10 +101,10 @@
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/btn2"
+                    android:src="@drawable/icon_app_manage"
                     android:layout_marginLeft="15dp"
                     android:layout_gravity="center_vertical"
-                    />
+                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -146,10 +146,10 @@
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/btn4"
+                    android:src="@drawable/icon_flow_monitor"
                     android:layout_marginLeft="15dp"
                     android:layout_gravity="center_vertical"
-                    />
+                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -174,10 +174,10 @@
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/btn2"
+                    android:src="@drawable/icon_privacy_protection"
                     android:layout_marginLeft="15dp"
                     android:layout_gravity="center_vertical"
-                    />
+                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -213,9 +213,9 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_marginLeft="15dp"
-                    android:src="@drawable/btn4"
+                    android:src="@drawable/icon_security_protection"
                     android:layout_gravity="center_vertical"
-                    />
+                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -246,10 +246,10 @@
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/btn2"
+                    android:src="@drawable/icon_ad_blocker"
                     android:layout_marginLeft="15dp"
                     android:layout_gravity="center_vertical"
-                    />
+                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
