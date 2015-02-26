@@ -10,11 +10,13 @@ import android.view.View.OnClickListener;
 import android.widget.LinearLayout;
 
 import cn.edu.njust.securityguardian.privacyprotection.PrivacyProtectionActivity;
+import cn.edu.njust.securityguardian.securityprotection.SecurityProtectionActivity;
 
 
 public class MainActivity extends Activity {
 
     private LinearLayout ll_privacy_protection;
+    private LinearLayout ll_security_protection;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         ll_privacy_protection=(LinearLayout)findViewById(R.id.ll_privacy_protection);
+        ll_security_protection=(LinearLayout)findViewById(R.id.ll_security_protection);
         ll_privacy_protection.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,7 +32,13 @@ public class MainActivity extends Activity {
                 startActivity(intent);
             }
         });
-
+        ll_security_protection.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,SecurityProtectionActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 

@@ -54,11 +54,16 @@
         <activity android:name=".MainActivity" >
 
         </activity>
+        <activity android:name=".privacyprotection.PrivacyProtectionActivity">
 
+        </activity>
         <activity android:name=".privacyprotection.applock.AppLockActivity">
 
         </activity>
-        <activity android:name=".privacyprotection.PrivacyProtectionActivity">
+        <activity android:name=".privacyprotection.permission.PermissionManagerActivity">
+
+        </activity>
+        <activity android:name=".securityprotection.SecurityProtectionActivity">
 
         </activity>
     </application>

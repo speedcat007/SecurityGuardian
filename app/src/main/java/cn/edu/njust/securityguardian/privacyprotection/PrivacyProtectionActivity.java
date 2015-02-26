@@ -9,6 +9,7 @@ import android.widget.RelativeLayout;
 
 import cn.edu.njust.securityguardian.R;
 import cn.edu.njust.securityguardian.privacyprotection.applock.AppLockActivity;
+import cn.edu.njust.securityguardian.privacyprotection.permission.PermissionManagerActivity;
 
 /**
  * Created by fookey on 15-2-7.
@@ -33,6 +34,13 @@ public class PrivacyProtectionActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(PrivacyProtectionActivity.this, AppLockActivity.class);
+                startActivity(intent);
+            }
+        });
+        rl_permission_manager.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(PrivacyProtectionActivity.this, PermissionManagerActivity.class);
                 startActivity(intent);
             }
         });
