@@ -1,19 +1,29 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             android:background="#000000"
-             android:orientation="vertical"
+             android:background="@color/black"
              tools:context="cn.edu.njust.securityguardian.WelcomeActivity">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/welcome_image_view"
-        android:src="@drawable/welcome820"
+        android:src="@drawable/welcome"
         android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/tv_welcome_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GO"
+        android:textColor="@color/SeaGreen"
+        android:textSize="70sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="92dp"
         />
 
 
 
-</LinearLayout>
+</RelativeLayout>

@@ -5,9 +5,12 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.KeyEvent;
+import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 
 /**
@@ -18,6 +21,7 @@ import android.widget.ImageView;
 public class WelcomeActivity extends Activity{
     private ImageView imageVeiw =null;
     private Animation animation=null;
+    private TextView tv_welcome_go;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +32,18 @@ public class WelcomeActivity extends Activity{
         animation = AnimationUtils.loadAnimation(this,R.anim.in_from_alpha);
         animation.setAnimationListener(new NextAcAnimationListener());
         imageVeiw.setAnimation(animation);
+
+        tv_welcome_go=(TextView)findViewById(R.id.tv_welcome_go);
+        tv_welcome_go.setClickable(true);
+        tv_welcome_go.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(WelcomeActivity.this,MainActivity.class);
+                startActivity(intent);
+                WelcomeActivity.this.finish();
+                overridePendingTransition(R.anim.in_from_right,R.anim.out_to_left);
+            }
+        });
 
     }
 
