@@ -66,6 +66,9 @@
         <activity android:name=".securityprotection.SecurityProtectionActivity">
 
         </activity>
+        <activity android:name=".privacyprotection.filecrypt.FileExplorerActivity">
+
+        </activity>
     </application>
 
 </manifest>

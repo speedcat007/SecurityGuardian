@@ -8,14 +8,14 @@ import android.view.View.OnClickListener;
 import android.widget.RelativeLayout;
 
 import cn.edu.njust.securityguardian.R;
-import cn.edu.njust.securityguardian.privacyprotection.applock.AppLockActivity;
+import cn.edu.njust.securityguardian.privacyprotection.filecrypt.FileExplorerActivity;
 import cn.edu.njust.securityguardian.privacyprotection.permission.PermissionManagerActivity;
 
 /**
  * Created by fookey on 15-2-7.
  *
  */
-public class PrivacyProtectionActivity extends Activity {
+public class PrivacyProtectionActivity extends Activity implements OnClickListener{
 
     private RelativeLayout rl_permission_manager;
     private RelativeLayout rl_app_lock;
@@ -30,22 +30,28 @@ public class PrivacyProtectionActivity extends Activity {
         rl_app_lock=(RelativeLayout)findViewById(R.id.rl_app_lock);
         rl_file_crypt=(RelativeLayout)findViewById(R.id.rl_file_crypt);
 
-        rl_app_lock.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(PrivacyProtectionActivity.this, AppLockActivity.class);
-                startActivity(intent);
-            }
-        });
-        rl_permission_manager.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(PrivacyProtectionActivity.this, PermissionManagerActivity.class);
-                startActivity(intent);
-            }
-        });
+        rl_app_lock.setOnClickListener(this);
+        rl_permission_manager.setOnClickListener(this);
+        rl_file_crypt.setOnClickListener(this);
 
     }
 
-
+    @Override
+    public void onClick(View v) {
+        Intent intent;
+        switch (v.getId()){
+            case R.id.rl_permission_manager:
+                intent=new Intent(this, PermissionManagerActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.rl_app_lock:
+                intent=new Intent(PrivacyProtectionActivity.this, PermissionManagerActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.rl_file_crypt:
+                intent=new Intent(this, FileExplorerActivity.class);
+                startActivity(intent);
+                break;
+        }
+    }
 }

@@ -13,10 +13,12 @@ import cn.edu.njust.securityguardian.privacyprotection.PrivacyProtectionActivity
 import cn.edu.njust.securityguardian.securityprotection.SecurityProtectionActivity;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements OnClickListener{
 
     private LinearLayout ll_privacy_protection;
     private LinearLayout ll_security_protection;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,22 +27,25 @@ public class MainActivity extends Activity {
 
         ll_privacy_protection=(LinearLayout)findViewById(R.id.ll_privacy_protection);
         ll_security_protection=(LinearLayout)findViewById(R.id.ll_security_protection);
-        ll_privacy_protection.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this, PrivacyProtectionActivity.class);
-                startActivity(intent);
-            }
-        });
-        ll_security_protection.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this,SecurityProtectionActivity.class);
-                startActivity(intent);
-            }
-        });
+        ll_privacy_protection.setOnClickListener(this);
+        ll_security_protection.setOnClickListener(this);
     }
 
+    @Override
+    public void onClick(View v) {
+        Intent intent;
+        switch (v.getId()){
+            case R.id.ll_privacy_protection :
+                intent=new Intent(MainActivity.this, PrivacyProtectionActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.ll_security_protection:
+                intent=new Intent(MainActivity.this,SecurityProtectionActivity.class);
+                startActivity(intent);
+                break;
+
+        }
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
