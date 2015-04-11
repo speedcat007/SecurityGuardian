@@ -8,6 +8,7 @@ import android.view.View.OnClickListener;
 import android.widget.RelativeLayout;
 
 import cn.edu.njust.securityguardian.R;
+import cn.edu.njust.securityguardian.privacyprotection.applock.AppLockActivity;
 import cn.edu.njust.securityguardian.privacyprotection.filecrypt.FileExplorerActivity;
 import cn.edu.njust.securityguardian.privacyprotection.permission.PermissionManagerActivity;
 
@@ -45,7 +46,7 @@ public class PrivacyProtectionActivity extends Activity implements OnClickListen
                 startActivity(intent);
                 break;
             case R.id.rl_app_lock:
-                intent=new Intent(PrivacyProtectionActivity.this, PermissionManagerActivity.class);
+                intent=new Intent(this, AppLockActivity.class);
                 startActivity(intent);
                 break;
             case R.id.rl_file_crypt:

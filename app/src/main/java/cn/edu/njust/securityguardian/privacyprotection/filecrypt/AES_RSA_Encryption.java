@@ -82,7 +82,7 @@ public class AES_RSA_Encryption {
 			OutputStream out=new FileOutputStream(file.getParent()+file.separator+fileName);
 			cipher= Cipher.getInstance("AES");
 			cipher.init(Cipher.DECRYPT_MODE,key);
-			crypt(in,out,cipher);	
+			crypt(in,out,cipher);
 			in.close();
 			out.close();
 			file.delete();
@@ -105,23 +105,21 @@ public class AES_RSA_Encryption {
 			//File f = new File("pub_key");
 			//ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("pub_key"));
 			FileOutputStream o =app.openFileOutput("pub_key",app.MODE_PRIVATE);
-			//PublicKey key = keypair.getPublic();
 			ObjectOutputStream out = new ObjectOutputStream(o);
 			out.writeObject(keypair.getPublic());
 			out.close();
 			o.close();
-
 
 			out = new ObjectOutputStream(app.openFileOutput("pri_key", app.MODE_PRIVATE));
             PrivateKey privateKey=keypair.getPrivate();
 			out.writeObject(privateKey);
 			out.close();
 
-		} catch (Exception e) {
+		} catch (FileNotFoundException e) {
 			// TODO: handle exception
-			Log.e(TAG, "crypt  init()出现错误！");
+			Log.e(TAG, "crypt  init()出现错误！"+e.getMessage());
 			e.printStackTrace();
-		}		
+		}
 	}
 
 	private static void crypt(InputStream in, OutputStream out, Cipher cipher)
@@ -149,6 +147,5 @@ public class AES_RSA_Encryption {
 		}
 	}
 
-	
 
 }
