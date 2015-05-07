@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="cn.edu.njust.securityguardian"
     android:versionCode="1"
-    android:versionName="1.0"
-    >
+    android:versionName="1.0">
 
     <uses-sdk
         android:minSdkVersion="14"
@@ -13,6 +13,25 @@
         <permission android:name="oem.permission.SENDMAIL"
                 android:protectionLevel="normal"/>
     -->
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
     <!-- 读进程权限 -->
     <!-- <uses-permission android:name="android.permission.GET_TASKS" /> -->
     <!-- 链接网络权限 -->
@@ -40,8 +59,152 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
+        android:name="com.yzy.supercleanmaster.base.BaseApplication"
         android:allowBackup="true"
-        android:icon="@drawable/icon_launcher"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/MyAppTheme" >
+        <activity
+            android:name="cn.edu.njust.securityguardian.ui.SplishActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/TranslateThemeFull" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.edu.njust.securityguardian.ui.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyAppTheme" />
+        <activity
+            android:name="cn.edu.njust.securityguardian.ui.ShortCutActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:label="@string/short_cut_name"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.souapp.screenlockmanager"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.yzy.shortcut" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.edu.njust.securityguardian.ui.MemoryCleanActivity"
+            android:label="@string/app_memory_clean"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTranslucentAppTheme" />
+        <activity
+            android:name="cn.edu.njust.securityguardian.ui.RubbishCleanActivity"
+            android:label="@string/app_rublish_clean"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTranslucentAppTheme" />
+        <activity
+            android:name="cn.edu.njust.securityguardian.ui.AutoStartManageActivity"
+            android:label="@string/app_autostart_manage"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTranslucentAppTheme" />
+        <activity
+            android:name="cn.edu.njust.securityguardian.ui.SoftwareManageActivity"
+            android:label="@string/app_software_manage"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTranslucentAppTheme" />
+        <activity
+            android:name="cn.edu.njust.securityguardian.ui.TrafficManageActivity"
+            android:label="@string/app_flow_manage"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTranslucentAppTheme" />
+        <activity
+            android:name="cn.edu.njust.securityguardian.ui.VirusKillActivity"
+            android:label="@string/app_virus_kill"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTranslucentAppTheme" />
+        <activity
+            android:name="com.yzy.supercleanmaster.base.FragmentContainerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTranslucentAppTheme" />
+        <activity
+            android:name="cn.edu.njust.securityguardian.ui.AboutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTranslucentAppTheme" />
+
+        <service
+            android:name="com.yzy.supercleanmaster.service.CleanerService"
+            android:exported="false" />
+        <service
+            android:name="com.yzy.supercleanmaster.service.CoreService"
+            android:exported="false" />
+        <service
+            android:name="com.yzy.supercleanmaster.service.TrafficService"
+            android:exported="false" />
+
+        <receiver android:name="com.yzy.supercleanmaster.receiver.BootCompleteReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 友盟 -->
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5539f3eee0f55a2bd7001a21" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Channel ID" />
+
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <!-- 友盟分享 -->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 100424468，如果你使用的公用账号，则不需要修改；否则修改成你在QQ开放平台申请的 APP ID -->
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+    </application>
+
+    <!--<application
+
+        android:allowBackup="true"
+        android:name="com.yzy.supercleanmaster.base.BaseApplication"
+        android:icon="@drawable/app_icon"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
 
@@ -70,6 +233,6 @@
         <activity android:name=".privacyprotection.filecrypt.FileExplorerActivity">
 
         </activity>
-    </application>
+    </application>-->
 
 </manifest>
