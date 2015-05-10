@@ -124,6 +124,26 @@
             android:label="@string/app_virus_kill"
             android:screenOrientation="portrait"
             android:theme="@style/MyTranslucentAppTheme" />
+        <activity android:name=".privacyprotection.PrivacyProtectionActivity"
+            android:label="隐私防护"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTranslucentAppTheme"
+            />
+
+        <activity android:name=".privacyprotection.applock.AppLockActivity"
+            android:label="程序锁"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTranslucentAppTheme"
+            />
+        <activity android:name=".privacyprotection.filecrypt.FileExplorerActivity"
+            android:label="文件加密"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTranslucentAppTheme"/>
+        <activity android:name=".privacyprotection.permission.PermissionManagerActivity"
+            android:label="权限管理"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTranslucentAppTheme"/>
+
         <activity
             android:name="com.yzy.supercleanmaster.base.FragmentContainerActivity"
             android:screenOrientation="portrait"

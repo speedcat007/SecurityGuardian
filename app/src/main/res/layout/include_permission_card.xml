@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e2e2e2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+
+        >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                >
+                <LinearLayout
+                    android:id="@+id/card1"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:clickable="true"
+                    android:background="@drawable/background_selector_permission"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="读取短信"
+                        android:textSize="25sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_permission_card_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                       android:layout_marginTop="5dp"
+                        android:layout_marginLeft="50dp"
+
+                        android:text="共kuan"
+                        android:textColor="@color/LightSkyBlue"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/card2"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    android:background="@drawable/background_selector_permission"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="发送短信"
+                        android:textSize="25sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_permission_card_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="共kuan"
+                        android:layout_marginTop="5dp"
+                       android:layout_marginLeft="50dp"
+                        android:textColor="@color/LightSkyBlue"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/card3"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:clickable="true"
+                    android:background="@drawable/background_selector_permission"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="联系人记录"
+                        android:textSize="25sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_permission_card_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="50dp"
+
+                        android:text="共kuan"
+                        android:textColor="@color/LightSkyBlue"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/card4"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:clickable="true"
+                    android:background="@drawable/background_selector_permission"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="电话"
+                        android:textSize="25sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_permission_card_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="50dp"
+
+                        android:text="共kuan"
+                        android:textColor="@color/LightSkyBlue"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/card5"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:clickable="true"
+                    android:background="@drawable/background_selector_permission"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="通话记录"
+                        android:textSize="25sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_permission_card_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="50dp"
+
+                        android:text="共kuan"
+                        android:textColor="@color/LightSkyBlue"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/card6"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:clickable="true"
+                    android:background="@drawable/background_selector_permission"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="通话状态"
+                        android:textSize="25sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_permission_card_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="50dp"
+
+                        android:text="共kuan"
+                        android:textColor="@color/LightSkyBlue"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/card7"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:clickable="true"
+                    android:background="@drawable/background_selector_permission"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="开启移动网络"
+                        android:textSize="25sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_permission_card_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="50dp"
+
+                        android:text="共kuan"
+                        android:textColor="@color/LightSkyBlue"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/card8"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:clickable="true"
+                    android:background="@drawable/background_selector_permission"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="开启Wifi"
+                        android:textSize="25sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_permission_card_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="50dp"
+
+                        android:text="共kuan"
+                        android:textColor="@color/LightSkyBlue"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/card9"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:clickable="true"
+                    android:background="@drawable/background_selector_permission"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="开启蓝牙"
+                        android:textSize="25sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_permission_card_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="50dp"
+
+                        android:text="共kuan"
+                        android:textColor="@color/LightSkyBlue"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/card10"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:clickable="true"
+                    android:background="@drawable/background_selector_permission"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="读取软件信息"
+                        android:textSize="25sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_permission_card_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="50dp"
+
+                        android:text="共kuan"
+                        android:textColor="@color/LightSkyBlue"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

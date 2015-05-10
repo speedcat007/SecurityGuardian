@@ -98,7 +98,6 @@ public class SoftwareAdapter extends BaseAdapter {
             }
         });
 
-
         return convertView;
     }
 

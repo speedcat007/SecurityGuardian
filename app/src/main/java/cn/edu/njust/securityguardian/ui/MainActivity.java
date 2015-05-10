@@ -29,6 +29,7 @@ import cn.edu.njust.securityguardian.R;
 import cn.edu.njust.securityguardian.fragment.MainFragment;
 import cn.edu.njust.securityguardian.fragment.NavigationDrawerFragment;
 import cn.edu.njust.securityguardian.fragment.SettingsFragment;
+import cn.edu.njust.securityguardian.privacyprotection.PrivacyProtectionActivity;
 
 
 public class MainActivity extends BaseActivity implements NavigationDrawerFragment.NavigationDrawerCallbacks {
@@ -199,6 +200,10 @@ public class MainActivity extends BaseActivity implements NavigationDrawerFragme
 
                 break;
             case 1:
+                closeDrawer();
+                startActivity(PrivacyProtectionActivity.class);
+                break;
+            case 2:
                 closeDrawer();
                 SettingsFragment.launch(MainActivity.this);
                 break;

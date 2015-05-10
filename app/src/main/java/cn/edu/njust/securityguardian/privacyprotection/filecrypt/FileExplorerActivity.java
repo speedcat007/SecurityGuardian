@@ -8,6 +8,7 @@ import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.os.Bundle;
 import android.os.Environment;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -34,6 +35,9 @@ public class FileExplorerActivity extends ListActivity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_file_crypt);
+		getActionBar().setHomeButtonEnabled(true);
+		getActionBar().setDisplayHomeAsUpEnabled(true);
+
 		initRootDir(savedInstanceState);
 		files = new ArrayList<FileListEntry>();
 		initFileListView();
@@ -58,7 +62,7 @@ public class FileExplorerActivity extends ListActivity {
 		});
 		filesListView.setOnItemLongClickListener(new OnItemLongClickListener() {
 			public boolean onItemLongClick(AdapterView<?> arg0,
-					final View view, int posiotion, long id) {
+										   final View view, int posiotion, long id) {
 
 				return true;// ..........................................
 			}
@@ -176,6 +180,15 @@ public class FileExplorerActivity extends ListActivity {
 		} else {
 			filesListView.setSelection(0);
 		}
-
 	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		if (item.getItemId() == android.R.id.home) {
+			finish();
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+
 }

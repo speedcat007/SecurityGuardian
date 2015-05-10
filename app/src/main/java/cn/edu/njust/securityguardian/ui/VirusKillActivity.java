@@ -31,8 +31,6 @@ import com.kanishka.virustotalv2.VirustotalPublicV2;
 import com.kanishka.virustotalv2.VirustotalPublicV2Impl;
 import com.xp.virustotal.ApiDetails;
 import com.yzy.supercleanmaster.R;
-import cn.edu.njust.securityguardian.adapter.SoftwareAdapter;
-import cn.edu.njust.securityguardian.adapter.TextAdapter;
 import com.yzy.supercleanmaster.base.BaseSwipeBackActivity;
 import com.yzy.supercleanmaster.model.AppInfo;
 import com.yzy.supercleanmaster.utils.AntiVirusDao;
@@ -50,6 +48,8 @@ import java.util.List;
 import java.util.Map;
 
 import butterknife.InjectView;
+import cn.edu.njust.securityguardian.adapter.SoftwareAdapter;
+import cn.edu.njust.securityguardian.adapter.TextAdapter;
 
 public class VirusKillActivity extends BaseSwipeBackActivity {
 
@@ -116,6 +116,8 @@ public class VirusKillActivity extends BaseSwipeBackActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_virus_kill);
         getActionBar().setDisplayHomeAsUpEnabled(true);
+        getActionBar().setHomeButtonEnabled(true);
+
         VirusAppAdapter = new SoftwareAdapter(mContext, appinfos);
         textAdapter = new TextAdapter(mContext, textList);
         listview.setAdapter(VirusAppAdapter);

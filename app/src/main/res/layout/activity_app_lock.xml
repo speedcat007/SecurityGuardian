@@ -5,18 +5,12 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
     >
-    <cn.edu.njust.securityguardian.ui.TitleBackView
-        android:id="@+id/tbv_app_lock"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        app:titleText="应用锁"
-        />
+
     <GridView
         android:padding="5dp"
         android:id="@+id/gv_app_lock"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_below="@id/tbv_app_lock"
         android:numColumns="3"
         android:horizontalSpacing="10dip"
         android:verticalSpacing="10dip"

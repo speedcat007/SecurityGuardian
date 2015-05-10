@@ -5,19 +5,6 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
     >
-    <cn.edu.njust.securityguardian.ui.TitleBackView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:titleText="隐私防护"
-        />
-    <RelativeLayout
-        android:id="@+id/rl_score_view"
-        android:layout_width="match_parent"
-        android:layout_height="265dp"
-        android:background="@color/MediumSlateBlue"
-        >
-
-    </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
