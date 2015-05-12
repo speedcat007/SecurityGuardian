@@ -33,7 +33,7 @@ public class PermissionService extends Service {
     private static final String TAG = "PermisssionService";
 
     private OnProgressActionListener mActionListener;
-    private boolean isScan=true;
+    private boolean isScan=false;
     ActivityManager activityManager = null;
     List<AppProcessInfo> list = null;
     PackageManager packageManager = null;
@@ -62,5 +62,9 @@ public class PermissionService extends Service {
         return mBinder;
     }
 
+    @Override
+    public void onCreate() {
+        mContext=getApplicationContext();
 
+    }
 }

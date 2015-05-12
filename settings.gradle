@@ -1,1 +1,1 @@
-include ':app', ':library', ':superCleanMaster', ':virustotal'
+include ':app', ':library', ':superCleanMaster', ':virustotal', ':MaxLock'

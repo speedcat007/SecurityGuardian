@@ -7,7 +7,7 @@
 
     <uses-sdk
         android:minSdkVersion="14"
-        android:targetSdkVersion="21" />
+        android:targetSdkVersion="22" />
 
     <!--
         <permission android:name="oem.permission.SENDMAIL"
@@ -16,13 +16,9 @@
     <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
     <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-
-
     <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
     <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
-
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
     <uses-permission android:name="android.permission.GET_TASKS" />
 
 
@@ -57,6 +53,14 @@
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!--MaxLock-->
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <!-- For wallpaper on Samsung devices -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- For IAPs -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
 
     <application
         android:name="com.yzy.supercleanmaster.base.BaseApplication"
@@ -218,6 +222,122 @@
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" >
         </activity>
+
+        <!--MaxLock-->
+        <activity
+            android:name="SettingsActivity"
+            android:enabled="true"
+            android:label="@string/app_name" />
+
+        <activity-alias
+            android:name=".Main"
+            android:enabled="true"
+            android:targetActivity="SettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".XposedMain"
+            android:enabled="true"
+            android:targetActivity=".ui.SettingsActivity">
+            <intent-filter>
+                <category android:name="de.robv.android.xposed.category.MODULE_SETTINGS" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity
+            android:name=".ui.LockActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:theme="@style/TranslucentStatusBar" />
+
+        <activity
+            android:name=".ui.FakeDieDialog"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:theme="@style/FakeDieDialog" />
+
+        <activity
+            android:name=".ui.MasterSwitchShortcutActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/toggle_master_switch"
+            android:theme="@style/TranslucentStatusBar">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".lib.DeprecatedMasterSwitch"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/toggle_master_switch_deprecated"
+            android:theme="@style/TranslucentStatusBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".ui.settings.SettingsFragment$UninstallProtectionReceiver"
+            android:description="@string/device_admin_description"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin" />
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+                <action android:name="android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED" />
+                <action android:name="android.app.action.DEVICE_ADMIN_DISABLED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.haibison.android.lockpattern.LockPatternActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:screenOrientation="user"
+            android:theme="@style/Alp.42447968.Theme.Dialog.Dark" />
+
+        <service
+            android:name=".ui.ThemeService"
+            android:enabled="false"
+            android:exported="false" />
+
+        <receiver android:name=".widget.MasterSwitchWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/masterswitch_widget_info" />
+        </receiver>
+
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="MaxLock" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="42" />
+        <meta-data
+            android:name="override_tinted_status_bar_defaults"
+            android:value="true" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
     </application>
 
     <!--<application
