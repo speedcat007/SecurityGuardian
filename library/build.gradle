@@ -27,3 +27,7 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:21.0.3'
     compile fileTree(include: ['*.jar'], dir: 'libs')
 }
+
+repositories {
+    true
+}

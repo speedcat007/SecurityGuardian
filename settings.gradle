@@ -1,1 +1,1 @@
-include ':app', ':library', ':superCleanMaster', ':virustotal', ':MaxLock'
+include ':app', ':library', ':virustotal', ':MaxLock', ':PatternLock', ':android-support-v4-preferencefragment'
