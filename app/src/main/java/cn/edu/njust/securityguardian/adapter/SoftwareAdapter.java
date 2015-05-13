@@ -9,14 +9,14 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import com.yzy.supercleanmaster.R;
 import com.yzy.supercleanmaster.model.AppInfo;
 import com.yzy.supercleanmaster.utils.StorageUtil;
 import com.yzy.supercleanmaster.views.RippleView;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import cn.edu.njust.securityguardian.R;
 
 public class SoftwareAdapter extends BaseAdapter {
 

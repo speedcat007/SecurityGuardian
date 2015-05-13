@@ -19,7 +19,6 @@ import android.text.format.Formatter;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.yzy.supercleanmaster.R;
 import com.yzy.supercleanmaster.model.CacheListItem;
 
 import java.lang.reflect.InvocationTargetException;
@@ -27,6 +26,8 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
+
+import cn.edu.njust.securityguardian.R;
 
 public class CleanerService extends Service {
 

@@ -18,8 +18,6 @@ import android.view.animation.AnimationUtils;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.yzy.supercleanmaster.R;
-import cn.edu.njust.securityguardian.adapter.SoftwareAdapter;
 import com.yzy.supercleanmaster.base.BaseFragment;
 import com.yzy.supercleanmaster.model.AppInfo;
 import com.yzy.supercleanmaster.utils.StorageUtil;
@@ -30,6 +28,8 @@ import java.util.List;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
+import cn.edu.njust.securityguardian.R;
+import cn.edu.njust.securityguardian.adapter.SoftwareAdapter;
 
 
 public class SoftwareManageFragment extends BaseFragment {

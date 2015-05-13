@@ -15,15 +15,15 @@ import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.yzy.supercleanmaster.R;
 import com.yzy.supercleanmaster.base.BaseSwipeBackActivity;
-import cn.edu.njust.securityguardian.fragment.AutoStartFragment;
-import cn.edu.njust.securityguardian.fragment.WeakFragmentPagerAdapter;
 import com.yzy.supercleanmaster.utils.SystemBarTintManager;
 import com.yzy.supercleanmaster.utils.UIElementsHelper;
 import com.yzy.supercleanmaster.views.SlidingTab;
 
 import butterknife.InjectView;
+import cn.edu.njust.securityguardian.R;
+import cn.edu.njust.securityguardian.fragment.AutoStartFragment;
+import cn.edu.njust.securityguardian.fragment.WeakFragmentPagerAdapter;
 
 
 public class AutoStartManageActivity extends BaseSwipeBackActivity {

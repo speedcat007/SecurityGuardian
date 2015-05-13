@@ -5,6 +5,6 @@
     <bool name="ga_autoActivityTracking">true</bool>
     <bool name="ga_reportUncaughtExceptions">true</bool>
     <integer name="ga_sessionTimeout">300</integer>
-    <screenName name="de.Maxr1998.xposed.maxlock.ui.SettingsActivity">Settings</screenName>
-    <screenName name="de.Maxr1998.xposed.maxlock.ui.LockActivity">LockScreen</screenName>
+    <screenName name="cn.edu.njust.securityguardian.privacyprotection.maxlock.ui.SettingsActivity">Settings</screenName>
+    <screenName name="cn.edu.njust.securityguardian.privacyprotection.maxlock.ui.LockActivity">LockScreen</screenName>
 </resources>

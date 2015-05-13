@@ -39,9 +39,10 @@ import android.widget.ImageView.ScaleType;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.yzy.supercleanmaster.R;
+import cn.edu.njust.securityguardian.R;
 
-public class IconRoundCornerProgressBar extends LinearLayout {	
+
+public class IconRoundCornerProgressBar extends LinearLayout {
 	private ImageView imageIcon;
 	private LinearLayout layoutHeader;
 	private LinearLayout layoutBackground;

@@ -9,7 +9,6 @@ import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import cn.edu.njust.securityguardian.R;
 
 /**
  * Created by fookey on 15-1-31.

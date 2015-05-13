@@ -26,8 +26,6 @@ import com.etiennelawlor.quickreturn.library.listeners.QuickReturnListViewOnScro
 import com.john.waveview.WaveView;
 import com.nhaarman.listviewanimations.appearance.simple.SwingBottomInAnimationAdapter;
 import com.nhaarman.listviewanimations.itemmanipulation.swipedismiss.OnDismissCallback;
-import com.yzy.supercleanmaster.R;
-import cn.edu.njust.securityguardian.adapter.ClearMemoryAdapter;
 import com.yzy.supercleanmaster.base.BaseSwipeBackActivity;
 import com.yzy.supercleanmaster.bean.AppProcessInfo;
 import com.yzy.supercleanmaster.model.StorageSize;
@@ -44,6 +42,8 @@ import java.util.List;
 
 import butterknife.InjectView;
 import butterknife.OnClick;
+import cn.edu.njust.securityguardian.R;
+import cn.edu.njust.securityguardian.adapter.ClearMemoryAdapter;
 
 
 public class MemoryCleanActivity extends BaseSwipeBackActivity implements OnDismissCallback, CoreService.OnPeocessActionListener {

@@ -9,15 +9,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.umeng.update.UmengUpdateAgent;
-import com.yzy.supercleanmaster.R;
 import com.yzy.supercleanmaster.base.BaseFragment;
 import com.yzy.supercleanmaster.model.SDCardInfo;
-import cn.edu.njust.securityguardian.ui.AutoStartManageActivity;
-import cn.edu.njust.securityguardian.ui.MemoryCleanActivity;
-import cn.edu.njust.securityguardian.ui.RubbishCleanActivity;
-import cn.edu.njust.securityguardian.ui.SoftwareManageActivity;
-import cn.edu.njust.securityguardian.ui.TrafficManageActivity;
-import cn.edu.njust.securityguardian.ui.VirusKillActivity;
 import com.yzy.supercleanmaster.utils.AppUtils;
 import com.yzy.supercleanmaster.utils.StorageUtil;
 import com.yzy.supercleanmaster.widget.circleprogress.ArcProgress;
@@ -28,6 +21,13 @@ import java.util.TimerTask;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import butterknife.OnClick;
+import cn.edu.njust.securityguardian.R;
+import cn.edu.njust.securityguardian.ui.AutoStartManageActivity;
+import cn.edu.njust.securityguardian.ui.MemoryCleanActivity;
+import cn.edu.njust.securityguardian.ui.RubbishCleanActivity;
+import cn.edu.njust.securityguardian.ui.SoftwareManageActivity;
+import cn.edu.njust.securityguardian.ui.TrafficManageActivity;
+import cn.edu.njust.securityguardian.ui.VirusKillActivity;
 
 
 public class MainFragment extends BaseFragment {

@@ -16,11 +16,11 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 
-import com.yzy.supercleanmaster.R;
 import com.yzy.supercleanmaster.base.BaseFragment;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
+import cn.edu.njust.securityguardian.R;
 
 
 public class DeciveInfoFragment extends BaseFragment {

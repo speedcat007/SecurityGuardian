@@ -15,7 +15,8 @@ import android.os.Parcelable;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.yzy.supercleanmaster.R;
+import cn.edu.njust.securityguardian.R;
+
 
 /**
  * @author kince

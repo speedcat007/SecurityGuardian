@@ -7,9 +7,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.yzy.supercleanmaster.R;
-
 import java.util.List;
+
+import cn.edu.njust.securityguardian.R;
 
 public class TextAdapter extends BaseAdapter {
 

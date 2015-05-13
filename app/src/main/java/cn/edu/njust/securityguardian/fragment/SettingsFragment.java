@@ -15,12 +15,13 @@ import com.umeng.socialize.weixin.controller.UMWXHandler;
 import com.umeng.update.UmengUpdateAgent;
 import com.umeng.update.UmengUpdateListener;
 import com.umeng.update.UpdateResponse;
-import com.yzy.supercleanmaster.R;
 import com.yzy.supercleanmaster.base.FragmentContainerActivity;
-import cn.edu.njust.securityguardian.ui.AboutActivity;
 import com.yzy.supercleanmaster.utils.AppUtils;
 import com.yzy.supercleanmaster.utils.T;
 import com.yzy.supercleanmaster.utils.Utils;
+
+import cn.edu.njust.securityguardian.R;
+import cn.edu.njust.securityguardian.ui.AboutActivity;
 
 
 public class SettingsFragment extends PreferenceFragment implements Preference.OnPreferenceClickListener {

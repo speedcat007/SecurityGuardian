@@ -9,11 +9,12 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
-import com.yzy.supercleanmaster.R;
 import com.yzy.supercleanmaster.model.TrafficInfo;
 import com.yzy.supercleanmaster.utils.TrafficUtils;
 
 import java.util.List;
+
+import cn.edu.njust.securityguardian.R;
 
 /**
  * Created by apple on 15/4/3.

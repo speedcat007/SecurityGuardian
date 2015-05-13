@@ -13,8 +13,6 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.yzy.supercleanmaster.R;
-import cn.edu.njust.securityguardian.adapter.AutoStartAdapter;
 import com.yzy.supercleanmaster.base.BaseFragment;
 import com.yzy.supercleanmaster.model.AutoStartInfo;
 import com.yzy.supercleanmaster.utils.BootStartUtils;
@@ -28,6 +26,8 @@ import java.util.List;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import butterknife.OnClick;
+import cn.edu.njust.securityguardian.R;
+import cn.edu.njust.securityguardian.adapter.AutoStartAdapter;
 
 
 public class AutoStartFragment extends BaseFragment {

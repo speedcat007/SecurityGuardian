@@ -12,11 +12,12 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.yzy.supercleanmaster.R;
 import com.yzy.supercleanmaster.model.CacheListItem;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import cn.edu.njust.securityguardian.R;
 
 public class RublishMemoryAdapter extends BaseAdapter implements AdapterView.OnItemClickListener {
 

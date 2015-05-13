@@ -31,6 +31,5 @@
     <orderEntry type="library" exported="" name="gson-2.2.4" level="project" />
     <orderEntry type="library" exported="" name="virustotal" level="project" />
     <orderEntry type="library" exported="" name="httpmime-4.4" level="project" />
-    <orderEntry type="library" exported="" name="virustotal.virustotal" level="project" />
   </component>
 </module>

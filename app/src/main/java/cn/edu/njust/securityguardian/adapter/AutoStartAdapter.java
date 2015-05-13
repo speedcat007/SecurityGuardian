@@ -9,14 +9,15 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.yzy.supercleanmaster.R;
-import cn.edu.njust.securityguardian.fragment.AutoStartFragment;
 import com.yzy.supercleanmaster.model.AutoStartInfo;
 import com.yzy.supercleanmaster.utils.ShellUtils;
 import com.yzy.supercleanmaster.utils.T;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import cn.edu.njust.securityguardian.R;
+import cn.edu.njust.securityguardian.fragment.AutoStartFragment;
 
 public class AutoStartAdapter extends BaseAdapter {
 

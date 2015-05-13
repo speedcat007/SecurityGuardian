@@ -8,7 +8,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.yzy.supercleanmaster.R;
+import cn.edu.njust.securityguardian.R;
 
 
 public class ItemCardView extends RelativeLayout {

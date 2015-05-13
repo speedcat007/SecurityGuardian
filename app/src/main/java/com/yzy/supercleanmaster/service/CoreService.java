@@ -15,12 +15,13 @@ import android.text.format.Formatter;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.yzy.supercleanmaster.R;
 import com.yzy.supercleanmaster.bean.AppProcessInfo;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
+
+import cn.edu.njust.securityguardian.R;
 
 public class CoreService extends Service {
 

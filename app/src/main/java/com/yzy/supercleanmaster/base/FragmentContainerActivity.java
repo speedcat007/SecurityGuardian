@@ -7,10 +7,11 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.MenuItem;
 
-import com.yzy.supercleanmaster.R;
 import com.yzy.supercleanmaster.utils.FragmentArgs;
 
 import java.lang.reflect.Method;
+
+import cn.edu.njust.securityguardian.R;
 
 public class FragmentContainerActivity extends BaseSwipeBackActivity {
 

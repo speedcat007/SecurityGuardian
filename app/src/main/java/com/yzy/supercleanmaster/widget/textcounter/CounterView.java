@@ -7,11 +7,12 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-import com.yzy.supercleanmaster.R;
 import com.yzy.supercleanmaster.widget.textcounter.formatters.CommaSeparatedDecimalFormatter;
 import com.yzy.supercleanmaster.widget.textcounter.formatters.DecimalFormatter;
 import com.yzy.supercleanmaster.widget.textcounter.formatters.IntegerFormatter;
 import com.yzy.supercleanmaster.widget.textcounter.formatters.NoFormatter;
+
+import cn.edu.njust.securityguardian.R;
 
 /**
  * Created by prem on 10/28/14.

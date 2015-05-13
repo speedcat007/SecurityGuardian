@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clickable="true"
-    tools:context="de.Maxr1998.xposed.maxlock.ui.LockFragment">
+    tools:context="cn.edu.njust.securityguardian.privacyprotection.maxlock.ui.LockFragment">
 
     <ImageView
         android:id="@+id/background"

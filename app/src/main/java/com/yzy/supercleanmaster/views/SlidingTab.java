@@ -38,11 +38,9 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.yzy.supercleanmaster.R;
-
 import java.util.Locale;
 
-
+import cn.edu.njust.securityguardian.R;
 
 
 public class SlidingTab extends HorizontalScrollView {

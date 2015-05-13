@@ -16,7 +16,6 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
-import com.yzy.supercleanmaster.R;
 import com.yzy.supercleanmaster.base.BaseActivity;
 import com.yzy.supercleanmaster.bean.AppProcessInfo;
 import com.yzy.supercleanmaster.service.CoreService;
@@ -28,6 +27,7 @@ import java.lang.reflect.Field;
 import java.util.List;
 
 import butterknife.InjectView;
+import cn.edu.njust.securityguardian.R;
 
 
 public class ShortCutActivity extends BaseActivity implements CoreService.OnPeocessActionListener {

@@ -35,9 +35,10 @@ import android.view.ViewTreeObserver.OnGlobalLayoutListener;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.yzy.supercleanmaster.R;
+import cn.edu.njust.securityguardian.R;
 
-public class RoundCornerProgressBar extends LinearLayout {	
+
+public class RoundCornerProgressBar extends LinearLayout {
 	private final static int DEFAULT_PROGRESS_BAR_HEIGHT = 30;
 	
 	private LinearLayout layoutBackground;

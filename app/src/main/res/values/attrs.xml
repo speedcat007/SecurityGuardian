@@ -126,10 +126,10 @@
         <attr name="card_image" format="reference" />
 
     </declare-styleable>
-<!--    <declare-styleable name="ImageItemView">
+    <declare-styleable name="ImageItemView">
         <attr name="itemtext" format="string"/>
         <attr name="imageSrc" format="reference"/>
-    </declare-styleable>-->
+    </declare-styleable>
 
     <declare-styleable name="TitleBackView">
         <attr name="titleText" format="string"/>

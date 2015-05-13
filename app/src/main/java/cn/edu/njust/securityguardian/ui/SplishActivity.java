@@ -8,13 +8,13 @@ import android.view.animation.Animation.AnimationListener;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-import com.yzy.supercleanmaster.R;
 import com.yzy.supercleanmaster.base.BaseActivity;
 import com.yzy.supercleanmaster.service.CleanerService;
 import com.yzy.supercleanmaster.service.CoreService;
 import com.yzy.supercleanmaster.utils.SharedPreferencesUtils;
 
 import butterknife.InjectView;
+import cn.edu.njust.securityguardian.R;
 
 
 public class SplishActivity extends BaseActivity {

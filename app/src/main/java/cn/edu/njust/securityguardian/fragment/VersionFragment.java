@@ -7,8 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.yzy.supercleanmaster.R;
 import com.yzy.supercleanmaster.base.FragmentContainerActivity;
+
+import cn.edu.njust.securityguardian.R;
 
 
 public class VersionFragment extends Fragment {

@@ -5,11 +5,11 @@ import android.text.util.Linkify;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import com.yzy.supercleanmaster.R;
 import com.yzy.supercleanmaster.base.BaseSwipeBackActivity;
 import com.yzy.supercleanmaster.utils.AppUtils;
 
 import butterknife.InjectView;
+import cn.edu.njust.securityguardian.R;
 
 public class AboutActivity extends BaseSwipeBackActivity {
 

@@ -9,11 +9,14 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import com.yzy.supercleanmaster.R;
+
 import com.yzy.supercleanmaster.bean.AppProcessInfo;
 import com.yzy.supercleanmaster.utils.StorageUtil;
+
 import java.util.ArrayList;
 import java.util.List;
+
+import cn.edu.njust.securityguardian.R;
 
 public class ClearMemoryAdapter extends BaseAdapter {
 

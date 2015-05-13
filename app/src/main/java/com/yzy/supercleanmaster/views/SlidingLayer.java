@@ -46,8 +46,10 @@ import android.view.animation.Interpolator;
 import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 import android.widget.Scroller;
-import com.yzy.supercleanmaster.R;
+
 import java.util.Random;
+
+import cn.edu.njust.securityguardian.R;
 
 
 public class SlidingLayer extends FrameLayout {

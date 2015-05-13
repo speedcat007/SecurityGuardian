@@ -30,7 +30,6 @@ import com.kanishka.virustotalv2.VirusTotalConfig;
 import com.kanishka.virustotalv2.VirustotalPublicV2;
 import com.kanishka.virustotalv2.VirustotalPublicV2Impl;
 import com.xp.virustotal.ApiDetails;
-import com.yzy.supercleanmaster.R;
 import com.yzy.supercleanmaster.base.BaseSwipeBackActivity;
 import com.yzy.supercleanmaster.model.AppInfo;
 import com.yzy.supercleanmaster.utils.AntiVirusDao;
@@ -48,6 +47,7 @@ import java.util.List;
 import java.util.Map;
 
 import butterknife.InjectView;
+import cn.edu.njust.securityguardian.R;
 import cn.edu.njust.securityguardian.adapter.SoftwareAdapter;
 import cn.edu.njust.securityguardian.adapter.TextAdapter;
 

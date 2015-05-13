@@ -21,8 +21,6 @@ import android.widget.TextView;
 import com.etiennelawlor.quickreturn.library.enums.QuickReturnType;
 import com.etiennelawlor.quickreturn.library.listeners.QuickReturnListViewOnScrollListener;
 import com.nhaarman.listviewanimations.itemmanipulation.swipedismiss.OnDismissCallback;
-import com.yzy.supercleanmaster.R;
-import cn.edu.njust.securityguardian.adapter.TrafficAdapter;
 import com.yzy.supercleanmaster.base.BaseSwipeBackActivity;
 import com.yzy.supercleanmaster.model.TrafficInfo;
 import com.yzy.supercleanmaster.service.TrafficService;
@@ -35,6 +33,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.InjectView;
+import cn.edu.njust.securityguardian.R;
+import cn.edu.njust.securityguardian.adapter.TrafficAdapter;
 
 
 public class TrafficManageActivity extends BaseSwipeBackActivity implements OnDismissCallback, TrafficService.OnFlowListener {

@@ -13,11 +13,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
-import com.yzy.supercleanmaster.R;
-
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.edu.njust.securityguardian.R;
 
 
 public class SwipeBackLayout extends FrameLayout {

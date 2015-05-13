@@ -10,9 +10,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RadioButton;
-import com.yzy.supercleanmaster.R;
+
 import com.yzy.supercleanmaster.base.BaseFragment;
+
 import butterknife.ButterKnife;
+import cn.edu.njust.securityguardian.R;
 
 
 public class NavigationDrawerFragment extends BaseFragment {
